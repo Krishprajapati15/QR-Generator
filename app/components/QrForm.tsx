@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
-import QrPreview from "./QrPreview";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
+import QrPreview from "./QrPreview";
 
 export default function QrForm() {
   const [url, setUrl] = useState("");
