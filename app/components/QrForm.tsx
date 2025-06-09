@@ -79,11 +79,11 @@ export default function QrForm() {
 
         {/* Filename and remove button */}
         {image && (
-          <div className="flex items-center gap-2 text-xs text-neutral-300 mt-1">
+          <div className="flex items-center gap-2 text-xs text-gray-600 mt-1">
             <span className="truncate max-w-[160px]">{image.name}</span>
             <button
               type="button"
-              className="ml-2 p-1 rounded-full hover:bg-red-200/30 focus-visible:ring-2 focus-visible:ring-red-400 transition"
+              className="ml-0 p-1 rounded-full hover:bg-red-200/30 focus-visible:ring-2 focus-visible:ring-red-400 transition"
               onClick={() => {
                 setImage(null);
                 if (fileInputRef.current) fileInputRef.current.value = "";
