@@ -9,7 +9,9 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         className={cn(
-          "inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none",
+          "inline-flex items-center justify-center rounded-lg border border-gray-700 bg-gradient-to-tr from-gray-900 to-gray-700 px-6 py-2 text-sm font-semibold text-white shadow-md transition-all duration-200",
+          "hover:from-black hover:to-gray-800 hover:shadow-lg focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:ring-offset-2",
+          "active:scale-95 disabled:opacity-60 disabled:cursor-not-allowed",
           className
         )}
         ref={ref}
